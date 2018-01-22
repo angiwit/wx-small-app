@@ -4,9 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    radioItemsList: {
+    itemDetail: {
       type: Object,
-      value:""
+      value: ""
     }
   },
 
@@ -14,7 +14,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    
+    questionNum: 0,
+    itemDetail: ""
   },
   /**
    * 组件的方法列表
@@ -23,7 +24,8 @@ Component({
     showTopTips: function () {
       var that = this;
       this.setData({
-        showTopTips: true
+        showTopTips: true,
+        questionNum: this.data.questionNum + 1
       });
       setTimeout(function () {
         that.setData({
@@ -31,22 +33,26 @@ Component({
         });
       }, 3000);
     },
+    submitAnswer: function(){
+      //提交答案的逻辑
+    },
     radioChange: function (e) {
       console.log('radio发生change事件，携带value值为：', e.detail.value);
-
-      var radioItems = this.data.radioItems;
+      var itemDetail = this.data.itemDetail;
+      var radioItems = this.data.itemDetail[this.data.questionNum].topic_answer;
       for (var i = 0, len = radioItems.length; i < len; ++i) {
-        radioItems[i].checked = radioItems[i].value == e.detail.value;
+        // console.log("11", radioItems[i], radioItems[i].topic_answer_id == e.detail.value);
+        radioItems[i].checked = radioItems[i].topic_answer_id == e.detail.value;
       }
 
       this.setData({
-        radioItems: radioItems
+        itemDetail: itemDetail
       });
     },
     checkboxChange: function (e) {
       console.log('checkbox发生change事件，携带value值为：', e.detail.value);
 
-      var checkboxItems = this.data.checkboxItems, values = e.detail.value;
+      var checkboxItems = this.data.itemDetail, values = e.detail.value;
       for (var i = 0, lenI = checkboxItems.length; i < lenI; ++i) {
         checkboxItems[i].checked = false;
 
@@ -59,7 +65,7 @@ Component({
       }
 
       this.setData({
-        checkboxItems: checkboxItems
+        itemDetail: checkboxItems
       });
     },
     bindDateChange: function (e) {

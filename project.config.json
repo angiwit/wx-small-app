@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.1",
 	"appid": "touristappid",
-	"projectname": "BSDemo",
+	"projectname": "wx-small-app",
 	"condition": {
 		"search": {
 			"current": -1,

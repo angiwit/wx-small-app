@@ -5,52 +5,61 @@ Page({
    * 页面的初始数据
    */
   data: {
-    innerText: String,
-
-    showTopTips: false,
-    radioItemsList: [
-        {
-          radioItems: [
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '0' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '1' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '2' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '3', checked: true }
-          ], value: '0'
-        },
-        {
-          radioItems: [
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '0' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '1' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '2' },
-            { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '3', checked: true }
-          ], value: '1'
-        }
-    ],
-    radioItems: [
-      { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '0' },
-      { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '1'},
-      { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '2' },
-      { name: '综合综合综合综合综合综合综合综合综合综合综合综合综合', value: '3', checked: true}
-    ],
-    checkboxItems: [
-      { name: 'standard is dealt for u.', value: '0', checked: true },
-      { name: 'standard is dealicient for u.', value: '1' }
-    ],
-
-    date: "2016-09-01",
-    time: "12:01",
-
-    countryCodes: ["+86", "+80", "+84", "+87"],
-    countryCodeIndex: 0,
-
-    countries: ["中国", "美国", "英国"],
-    countryIndex: 0,
-
-    accounts: ["微信号", "QQ", "Email"],
-    accountIndex: 0,
-
-    isAgree: false
-  
+    itemDetail: [{
+      "topic_name": "题目一",
+      "topic_answer": [{
+        "topic_answer_id": 1,
+        "topic_id": 20,
+        "answer_name": "答案aaaa",
+        "is_standard_answer": 0,
+        "checked": true
+      }, {
+        "topic_answer_id": 2,
+        "topic_id": 20,
+        "answer_name": "正确答案",
+        "is_standard_answer": 0,
+        "checked": false
+      }, {
+        "topic_answer_id": 3,
+        "topic_id": 20,
+        "answer_name": "答案cccc",
+        "is_standard_answer": 0,
+        "checked": false
+      }, {
+        "topic_answer_id": 4,
+        "topic_id": 20,
+        "answer_name": "答案dddd",
+        "is_standard_answer": 1,
+        "checked": false
+      }]
+    }, {
+      "topic_name": "题目二",
+      "topic_answer": [{
+        "topic_answer_id": 5,
+        "topic_id": 21,
+        "answer_name": "答案A",
+        "is_standard_answer": 1,
+        "checked": false
+      }, {
+        "topic_answer_id": 6,
+        "topic_id": 21,
+        "answer_name": "答案B",
+        "is_standard_answer": 0,
+        "checked": false
+      }, {
+        "topic_answer_id": 7,
+        "topic_id": 21,
+        "answer_name": "正确答案",
+        "is_standard_answer": 0,
+        "checked": false
+      }, {
+        "topic_answer_id": 8,
+        "topic_id": 21,
+        "answer_name": "答案D",
+        "is_standard_answer": 0,
+        "checked": false
+      }]
+    }]
   },
 
   /**
