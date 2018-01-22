@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "component-ill-test": "/pages/ill-test-component/illtest"
+  }
+}

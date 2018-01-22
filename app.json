@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ill-test-component/illtest",
+    "pages/audio/audio",
+    "pages/image/img",
+    "pages/illtest-page/zonghe/testill",
+    "pages/illtest-page/shenjingbing/testill",
+    "pages/illtest-page/tuoyanzheng/testill",
+    "pages/illtest-page/jingshenbing/testill"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "不正常人类研究中心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "backgroundColor": "#DDDDDD",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "疾控中心",
+        "iconPath": "images/hospital_unselected.png",
+        "selectedIconPath": "images/hospital_selected.png"
+      },
+      {
+        "pagePath": "pages/image/img",
+        "text": "今日打卡",
+        "iconPath": "images/daka_selected.png",
+        "selectedIconPath": "images/daka_selected.png"
+      },
+      {
+        "pagePath": "pages/audio/audio",
+        "text": "个人中心",
+        "iconPath": "images/my_unselected.png",
+        "selectedIconPath": "images/my_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 120000
+  },
+  "debug": true
+}

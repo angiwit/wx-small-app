@@ -1,0 +1,7 @@
+<!--pages/illtest-page/testill.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+        <view>
+              <component-ill-test
+               item="{{item}}" radio-items="{{radioItems}}"></component-ill-test>
+        </view>  
+</view>

@@ -1,0 +1,9 @@
+/* pages/ill-test/illtest.wxss */
+@import '/dist/style/weui.wxss';
+.imageContainer {
+  margin: 0 auto;
+  display: block;
+  width: auto; 
+  height: 150px;
+  background-image: url('')
+}

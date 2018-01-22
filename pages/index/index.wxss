@@ -1,0 +1,35 @@
+/*item的内容样式*/
+@import '/dist/style/weui.wxss';
+.imageContainer {
+  margin: 0 auto;
+  display: block;
+  width: auto; 
+  height: 170px;
+  background-image: url('/images/top_banner.png');
+}
+.itemContent{
+  color: black;
+  font-size: 35rpx;
+}
+.welcome-container {
+  background-color: whitesmoke;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.ill-container {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.ill-container .ill-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+  background-color: pink;
+}
+
+.ill-container .ill-item:nth-child(1) {
+   border-right: 5rpx solid #efefef;
+}
