@@ -1,0 +1,71 @@
+@import '/dist/style/weui.wxss';
+.weui-number-input {
+    float:left;
+    height:20px;
+    font-size:20px;
+    color: #666;
+    -webkit-appearance: none;
+    appearance: none;
+    border:1px solid #ececec;
+    padding:3px 0;
+    text-align:center;
+    border-radius: 1px;
+  }
+  .weui-number {
+    float:left;
+    height:20px;
+    font-size:25px;
+    line-height:18px;
+    color:#3cc51f;
+    border:1px solid #ececec;
+  }
+  .weui-number-sub {
+    border-right:none;
+    padding:3px 10px;
+    border-radius:2px 0 0 2px;
+  }
+  .weui-number-plus {
+    border-left:none;
+    margin-right: 5px;
+    padding:3px 8px;
+    border-radius:0 2px 2px 0;
+  }
+
+.weui-rater {
+  text-align: left;
+  display: inline-block;
+  line-height: normal;
+}
+.weui-rater a {
+  display: inline-block;
+  text-align: center;
+  line-height: 25px;
+  cursor: pointer;
+  color: #ccc;
+}
+.weui-rater a:last-child {
+  padding-right: 2px!important;
+  margin-right: 0px!important;
+}
+.weui-rater a:hover {
+  color: #ffdd99;
+}
+.weui-rater a.checked {
+  color: #ffdd99 !important;
+  cursor: not-allowed;
+}
+.weui-rater-box {
+  position: relative;
+  margin-right: 2px; font-size: 25px; width: 25px; height: 25px; color: rgb(255, 204, 102);
+}
+.weui-rater-inner {
+ position: relative;
+ display: inline-block;
+}
+.weui-rater-outer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  overflow: hidden;
+}

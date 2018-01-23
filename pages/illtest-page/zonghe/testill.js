@@ -9,57 +9,60 @@ Page({
       "topic_name": "题目一",
       "topic_answer": [{
         "topic_answer_id": 1,
-        "topic_id": 20,
         "answer_name": "答案aaaa",
-        "is_standard_answer": 0,
-        "checked": true
+        "checked": false
       }, {
         "topic_answer_id": 2,
-        "topic_id": 20,
         "answer_name": "正确答案",
-        "is_standard_answer": 0,
         "checked": false
       }, {
         "topic_answer_id": 3,
-        "topic_id": 20,
         "answer_name": "答案cccc",
-        "is_standard_answer": 0,
         "checked": false
       }, {
         "topic_answer_id": 4,
-        "topic_id": 20,
         "answer_name": "答案dddd",
-        "is_standard_answer": 1,
         "checked": false
       }]
     }, {
       "topic_name": "题目二",
       "topic_answer": [{
-        "topic_answer_id": 5,
-        "topic_id": 21,
+        "topic_answer_id": 1,
         "answer_name": "答案A",
-        "is_standard_answer": 1,
         "checked": false
       }, {
-        "topic_answer_id": 6,
-        "topic_id": 21,
+        "topic_answer_id": 2,
         "answer_name": "答案B",
-        "is_standard_answer": 0,
         "checked": false
       }, {
-        "topic_answer_id": 7,
-        "topic_id": 21,
+        "topic_answer_id": 3,
         "answer_name": "正确答案",
-        "is_standard_answer": 0,
         "checked": false
       }, {
-        "topic_answer_id": 8,
-        "topic_id": 21,
+        "topic_answer_id": 4,
         "answer_name": "答案D",
-        "is_standard_answer": 0,
         "checked": false
       }]
-    }]
+    }],
+    answerResult: [
+      {
+        key: ["1","1"],
+        value: "恭喜你，你很健康"  
+      },
+      {
+        key: ["1", "2"],
+        value: "你是亚健康"  
+      },
+      {
+        key: ["2", "1"],
+        value: "你有精神病"
+      },
+      {
+        key: ["2", "2"],
+        value: "你没救了"
+      }
+    ],
+    otherAnswerResult: "刚才没看清，你再走两步"
   },
 
   /**

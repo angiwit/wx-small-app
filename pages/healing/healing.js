@@ -9,8 +9,15 @@ Page({
     },
     onLoad: function (options) {
         // 页面初始化 options为页面跳转所带来的参数
-        this.requestData("newlist");
+        // this.requestData("newlist");
     },
+    //***********************************组件的操作js********************************************/
+    upDownOperation: function()
+    {
+      console.log("dajfldajfldsjalfjslafjdlsajfldsjal")
+    },
+// ***********************************组件的操作js********************************************/
+
     requestData: function (a) {
         var that = this;
         wx.request({

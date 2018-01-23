@@ -2,12 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/ill-test-component/illtest",
-    "pages/audio/audio",
+    "pages/ill-test-result/result",
     "pages/image/img",
     "pages/illtest-page/zonghe/testill",
     "pages/illtest-page/shenjingbing/testill",
     "pages/illtest-page/tuoyanzheng/testill",
-    "pages/illtest-page/jingshenbing/testill"
+    "pages/illtest-page/jingshenbing/testill",
+    "pages/healing/healing"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,7 +35,7 @@
         "selectedIconPath": "images/daka_selected.png"
       },
       {
-        "pagePath": "pages/audio/audio",
+        "pagePath": "pages/image/img",
         "text": "个人中心",
         "iconPath": "images/my_unselected.png",
         "selectedIconPath": "images/my_selected.png"

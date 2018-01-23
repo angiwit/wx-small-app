@@ -1,6 +1,7 @@
 <!--pages/illtest-page/testill.wxml-->
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
         <view>
-              <component-ill-test item-detail="{{itemDetail}}"></component-ill-test>
+              <component-ill-test item-detail="{{itemDetail}}" other-answer-result="{{otherAnswerResult}}"
+              answer-result="{{answerResult}}"></component-ill-test>
         </view>  
 </view>

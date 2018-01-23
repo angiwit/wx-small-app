@@ -7,7 +7,12 @@ Component({
     itemDetail: {
       type: Object,
       value: ""
-    }
+    },
+    answerResult:{
+      type: Object,
+      value: ""
+    },
+    otherAnswerResult: String
   },
 
   /**
@@ -15,94 +20,55 @@ Component({
    */
   data: {
     questionNum: 0,
-    itemDetail: ""
+    itemDetail: "",
+    choosedNum: "",
+    answers:[]
   },
   /**
    * 组件的方法列表
    */
   methods: {
-    showTopTips: function () {
-      var that = this;
+    addQuestionNum: function()
+    {
+      console.log("当前的choosedNum值为", this.data.choosedNum)
       this.setData({
         showTopTips: true,
         questionNum: this.data.questionNum + 1
       });
-      setTimeout(function () {
-        that.setData({
-          showTopTips: false
-        });
-      }, 3000);
+      this.data.answers.push(this.data.choosedNum)
+      console.log(this.data.answers)
     },
+    
     submitAnswer: function(){
-      //提交答案的逻辑
+      this.data.answers.push(this.data.choosedNum)
+      var answers = this.data.answers
+      var answerResult = this.properties.answerResult
+      var testResult;
+      for (var i = 0, len = answerResult.length; i < len; ++i)
+      {
+        if (answerResult[i].key.toString() == answers.toString())
+        {
+          testResult = answerResult[i].value
+          wx.setStorageSync('myTestResult', answerResult[i].value)
+        }
+      }
+      wx.navigateTo({
+        url: '../../ill-test-result/result?myTestResult=' + testResult
+      })
     },
     radioChange: function (e) {
       console.log('radio发生change事件，携带value值为：', e.detail.value);
       var itemDetail = this.data.itemDetail;
       var radioItems = this.data.itemDetail[this.data.questionNum].topic_answer;
       for (var i = 0, len = radioItems.length; i < len; ++i) {
-        // console.log("11", radioItems[i], radioItems[i].topic_answer_id == e.detail.value);
         radioItems[i].checked = radioItems[i].topic_answer_id == e.detail.value;
       }
 
       this.setData({
-        itemDetail: itemDetail
+        itemDetail: itemDetail,
+        choosedNum: e.detail.value
       });
-    },
-    checkboxChange: function (e) {
-      console.log('checkbox发生change事件，携带value值为：', e.detail.value);
-
-      var checkboxItems = this.data.itemDetail, values = e.detail.value;
-      for (var i = 0, lenI = checkboxItems.length; i < lenI; ++i) {
-        checkboxItems[i].checked = false;
-
-        for (var j = 0, lenJ = values.length; j < lenJ; ++j) {
-          if (checkboxItems[i].value == values[j]) {
-            checkboxItems[i].checked = true;
-            break;
-          }
-        }
-      }
-
-      this.setData({
-        itemDetail: checkboxItems
-      });
-    },
-    bindDateChange: function (e) {
-      this.setData({
-        date: e.detail.value
-      })
-    },
-    bindTimeChange: function (e) {
-      this.setData({
-        time: e.detail.value
-      })
-    },
-    bindCountryCodeChange: function (e) {
-      console.log('picker country code 发生选择改变，携带值为', e.detail.value);
-
-      this.setData({
-        countryCodeIndex: e.detail.value
-      })
-    },
-    bindCountryChange: function (e) {
-      console.log('picker country 发生选择改变，携带值为', e.detail.value);
-
-      this.setData({
-        countryIndex: e.detail.value
-      })
-    },
-    bindAccountChange: function (e) {
-      console.log('picker account 发生选择改变，携带值为', e.detail.value);
-
-      this.setData({
-        accountIndex: e.detail.value
-      })
-    },
-    bindAgreeChange: function (e) {
-      this.setData({
-        isAgree: !!e.detail.value.length
-      });
+    
     }
   }
 })
