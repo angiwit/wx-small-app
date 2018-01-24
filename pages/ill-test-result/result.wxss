@@ -1,7 +1,67 @@
-@import '/dist/style/weui.wxss';
-page{
-    background-color: #FFFFFF;
+.page{
+ 
 }
-image{
-    margin: 4px 0;
+.page__bd {
+  padding: 20px 20px;
+  background-color: #f6f6f6;
+}
+
+.body_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column; /*主轴方向是竖向，所以设置主轴方向的margin、height等都不起作用，主轴方向的高度由内容撑开*/
+  align-items: center; /*样式的高度方向不用关心，由margin、padding、内容等撑开就可以了*/
+  border-radius: 10px;
+  width: 100%; /*如果这里不设置width，则元素的宽由元素内容撑开*/
+  margin-top: 15px; 
+}
+
+.item_title {
+  flex: 1;
+  font-size: 30px;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+}
+
+.item_content {
+  flex: 1;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.iamge {
+  flex: 1;
+  border-bottom: 2px solid #f6f6f6;
+  width: 100%;
+  text-align: center;
+  height: 150px;
+}
+
+.item_content_main {
+  height: calc(100vh - 400px);
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  word-break: break-all;
+  overflow-y:scroll;
+}
+
+.my_weui-btn_container {
+  padding: 20px 0 40px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+.my_weui-btn {
+  color: #fff;
+  background-color: #1aad19;
+  margin-left:5%;
+  margin-right:5%;
+  width: 90%;
 }
