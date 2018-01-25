@@ -11,10 +11,12 @@
       <view class="item_content">神经病★★★★★</view>
       <image class='iamge' src='/images/top_banner.png'></image>
       <view class='item_content_main'>需要从接口读取数据</view>
+      <view class="my_weui-btn_container">
+        <button class="my_weui-btn" bindtap='healing'>确定</button>
+      </view>
+      
     </view>
-    
+    <!-- <view class='footer_cover'> </view> -->
   </view>
-   <view class="my_weui-btn_container">
-      <button class="my_weui-btn" bindtap='healing'>确定</button>
-    </view>
+   
 </view>

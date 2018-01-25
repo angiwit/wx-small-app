@@ -1,19 +1,26 @@
 .page{
- 
-}
-.page__bd {
-  padding: 20px 20px;
   background-color: #f6f6f6;
+}
+html {
+   background-color: #f6f6f6;
+}
+
+.page__bd {
+  /* padding: 10% 5% 8% 5%; */
+   /* display: flex;  */
+  background-color: #f6f6f6;
+   /* align-items: center;  */
+  /* height: 100vh; */
 }
 
 .body_container {
+  margin: 10% 5%;
+  border: 3px solid #1aad19;
   background-color: white;
   display: flex;
-  flex-direction: column; /*主轴方向是竖向，所以设置主轴方向的margin、height等都不起作用，主轴方向的高度由内容撑开*/
+  flex-direction: column; /*主轴方向是竖向，所以设置主轴方向的margin不起作用*/
   align-items: center; /*样式的高度方向不用关心，由margin、padding、内容等撑开就可以了*/
-  border-radius: 10px;
-  width: 100%; /*如果这里不设置width，则元素的宽由元素内容撑开*/
-  margin-top: 15px; 
+   width: 90%; /*如果这里不设置width，则元素的宽由元素内容撑开 */
 }
 
 .item_title {
@@ -49,13 +56,15 @@
   text-align: left;
   word-break: break-all;
   overflow-y:scroll;
+  border: 2px solid #f6f6f6;
+  margin-bottom: 5px;
 }
 
 .my_weui-btn_container {
-  padding: 20px 0 40px 0;
-  position: fixed;
+  /* padding: 20px 0 40px 0; */
+  flex: 1;
   width: 100%;
-  background-color: #f6f6f6;
+  margin-bottom: 5px;
 }
 
 .my_weui-btn {
