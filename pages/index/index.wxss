@@ -1,28 +1,24 @@
 /*item的内容样式*/
 @import '/dist/style/weui.wxss';
-.itemContent{
-  color: black;
-  font-size: 35rpx;
-}
-.welcome-container {
-  background-color: whitesmoke;
-  text-align: center;
-  line-height: 100rpx;
-}
-
-.ill-container {
+.body_container {
+  background-color: white;
   display: flex;
-  margin-top: 20rpx;
-  padding: 0 20rpx 0 20rpx;
+  flex-flow: column nowrap;
+  align-items: center; /*样式的高度方向不用关心，由margin、padding、内容等撑开就可以了*/
+  width: 90%; /*如果这里不设置width，则元素的宽由元素内容撑开 */
+  height: 80vh; 
+  overflow-y: scroll;
 }
-
-.ill-container .ill-item {
-  flex: 1;
-  text-align: center;
-  padding: 20rpx 0;
-  background-color: pink;
+.page__bd{
+  display: flex;
+  background-color: #f6f6f6;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
 }
-
-.ill-container .ill-item:nth-child(1) {
-   border-right: 5rpx solid #efefef;
+.sigle_component_container{
+  flex: 1; 
+}
+.multi_component_container{
+  flex: 4;
 }

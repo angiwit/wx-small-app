@@ -8,7 +8,8 @@
     "pages/illtest-page/shenjingbing/testill",
     "pages/illtest-page/tuoyanzheng/testill",
     "pages/illtest-page/jingshenbing/testill",
-    "pages/healing/healing"
+    "pages/healing/healing",
+    "pages/pay_succ/pay_succ"
   ],
   "window": {
     "backgroundTextStyle": "light",

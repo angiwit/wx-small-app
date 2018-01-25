@@ -1,9 +1,40 @@
 /* pages/ill-test/illtest.wxss */
 @import '/dist/style/weui.wxss';
-.imageContainer {
-  margin: 0 auto;
-  display: block;
-  width: auto; 
-  height: 150px;
-  background-image: url('')
+.body_container {
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center; /*样式的高度方向不用关心，由margin、padding、内容等撑开就可以了*/
+  width: 90%; /*如果这里不设置width，则元素的宽由元素内容撑开 */
+  height: 80vh; 
+  overflow-y: scroll;
+}
+.page__bd{
+  display: flex;
+  background-color: #f6f6f6;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.component_container{
+  flex: 1;
+  width: 100%;
+}
+
+.my_weui-btn_container {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  margin-bottom: 5px;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.my_weui-btn {
+  color: #fff;
+  background-color: #1aad19;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }

@@ -1,23 +1,27 @@
 Page({
     data: {
-        dataList:[],
-        // text:"这是一个页面"
-        isHiddenLoading: false,
-        isHiddenToast: true,
-        isHiddenModal: true,
-        maxTime: ""
+      date: "2016-09-01",
+      time: "12:01"
+    },
+    payResult: function () {
+      wx.navigateTo({
+        url: '../pay_succ/pay_succ',
+      })
     },
     onLoad: function (options) {
         // 页面初始化 options为页面跳转所带来的参数
         // this.requestData("newlist");
     },
-    //***********************************组件的操作js********************************************/
-    upDownOperation: function()
-    {
-      console.log("dajfldajfldsjalfjslafjdlsajfldsjal")
+    bindDateChange: function (e) {
+      this.setData({
+        date: e.detail.value
+      })
     },
-// ***********************************组件的操作js********************************************/
-
+    bindTimeChange: function (e) {
+      this.setData({
+        time: e.detail.value
+      })
+    },
     requestData: function (a) {
         var that = this;
         wx.request({

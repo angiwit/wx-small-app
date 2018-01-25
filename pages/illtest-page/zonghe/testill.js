@@ -6,7 +6,7 @@ Page({
    */
   data: {
     itemDetail: [{
-      "topic_name": "题目一",
+      "topic_name": "题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一题目一",
       "topic_answer": [{
         "topic_answer_id": 1,
         "answer_name": "答案aaaa",
@@ -25,7 +25,7 @@ Page({
         "checked": false
       }]
     }, {
-      "topic_name": "题目二",
+        "topic_name": "题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二题目二",
       "topic_answer": [{
         "topic_answer_id": 1,
         "answer_name": "答案A",

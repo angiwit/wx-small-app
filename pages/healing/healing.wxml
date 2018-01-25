@@ -1,23 +1,61 @@
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
-  <view class='page__hd'>
-
+<view class="page">
+  <view class="page__hd">
   </view>
-
   <view class="page__bd">
-    <div class="weui_cells weui_cells_form ">
-      <div class="weui_cell">
-        <!-- <div class="weui_cell_bd weui_cell_primary">
-          <p>选择治疗费用</p>
-        </div> -->
-        <div style="font-size: 0px;" class="weui_cell_ft">
-           <view class="weui-number weui-number-sub needsclick" bindTap="upDownOperation">-</view> 
-          <input pattern="[0-9]*" class="weui-number-input" style="width: 50px;" value='1' data-min="1" data-max="10" data-step="2" />
-          <view class="weui-number weui-number-plus needsclick" bindTap="upDownOperation">+</view>
-        </div>
-        <div class="weui_cell_ft" style="display: none;"> 0 </div>
-        
-      </div>
-    </div>
-    
+    <view class='body_container'>
+      <view class='component_container'>
+        <view class="weui-cells__title">表单</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">输入氪金额</view>
+            </view>
+            <view class="weui-cell__bd">
+              <input class="weui-input component_font" placeholder="请输入整数" />
+            </view>
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">治疗开始时间</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="weui-input component_font">{{date}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">治疗结束时间</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="weui-input component_font">{{date}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">打卡时间点</view>
+            </view>
+            <view class="weui-cell__bd">
+              <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="weui-input component_font">{{time}}</view>
+              </picker>
+            </view>
+          </view>
+
+        </view>
+
+      </view>
+      <view class='item_content_main'>
+        治病说明：发你放散阀度搜啊念佛打扫范德萨of都搜爱妃
+      </view>
+      <view class="my_weui-btn_container">
+        <button class="my_weui-btn" bindtap='payResult'>确定</button>
+      </view>
+    </view>
   </view>
+
 </view>

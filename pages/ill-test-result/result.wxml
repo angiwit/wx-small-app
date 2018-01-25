@@ -3,8 +3,6 @@
     <!-- <view class="page__title">Article</view>
         <view class="page__desc">文章</view> -->
   </view>
-
-
   <view class="page__bd">
     <view class='body_container'>
       <view class="item_title">我的病情结果</view>
@@ -14,9 +12,9 @@
       <view class="my_weui-btn_container">
         <button class="my_weui-btn" bindtap='healing'>确定</button>
       </view>
-      
+
     </view>
     <!-- <view class='footer_cover'> </view> -->
   </view>
-   
+
 </view>

@@ -3,73 +3,80 @@
 
   </view>
   <view class="page__bd">
-
-    <view class="weui-panel weui-panel_access">
-      <view class="weui-panel__hd">查看我的测试记录</view>
-      <view class="weui-panel__bd">
-        <navigator url="../ill-test-result/result" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="/images/zonghe_result.png" />
+    <view class='body_container'>
+      <view class='sigle_component_container'>
+        <view class="weui-panel weui-panel_access">
+          <view class="weui-panel__hd">查看我的测试记录</view>
+          <view class="weui-panel__bd">
+            <navigator url="../ill-test-result/result" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+              <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                <image class="weui-media-box__thumb" src="/images/zonghe_result.png" />
+              </view>
+              <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">测试记录</view>
+                <view class="weui-media-box__desc">由各种神经病、精神病、智力障碍人士共同打造的全球疾病监测中心 </view>
+              </view>
+            </navigator>
           </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-            <view class="weui-media-box__title">测试记录</view>
-            <view class="weui-media-box__desc">由各种神经病、精神病、智力障碍人士共同打造的全球疾病监测中心 </view>
-          </view>
-        </navigator>
+        </view>
       </view>
 
 
-
-      <view class="weui-panel__hd">我没病，不信我给你走两步</view>
-      <view class="weui-panel__bd">
-        <navigator url="../illtest-page/zonghe/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="/images/vidio_selected.png" />
-          </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-            <view class="weui-media-box__title">综合测试</view>
-            <view class="weui-media-box__desc">由各种神经病、精神病、智力障碍人士共同打造的全球疾病监测中心 </view>
-          </view>
-        </navigator>
+      <view class='sigle_component_container'>
+        <view class="weui-panel__hd">我没病，不信我给你走两步</view>
+        <view class="weui-panel__bd">
+          <navigator url="../illtest-page/zonghe/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="/images/vidio_selected.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">综合测试</view>
+              <view class="weui-media-box__desc">由各种神经病、精神病、智力障碍人士共同打造的全球疾病监测中心 </view>
+            </view>
+          </navigator>
+        </view>
       </view>
 
+      <view class='multi_component_container'>
+        <view class="weui-panel__hd">我有病，但是能有多严重呢</view>
+        <view class="weui-panel__bd">
+          <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="/images/image_selected.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">精神病1</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
+            </view>
+          </navigator>
+        </view>
 
-      <view class="weui-panel__hd">我有病，但是能有多严重呢</view>
-      <view class="weui-panel__bd">
-        <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="/images/image_selected.png" />
-          </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-            <view class="weui-media-box__title">精神病1</view>
-            <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
-          </view>
-        </navigator>
+
+        <view class="weui-panel__bd">
+          <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="/images/image_selected.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">精神病2</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
+            </view>
+          </navigator>
+        </view>
+
+        <view class="weui-panel__bd">
+          <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="/images/image_selected.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">精神病3</view>
+              <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
+            </view>
+          </navigator>
+        </view>
       </view>
 
-      <view class="weui-panel__bd">
-        <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="/images/image_selected.png" />
-          </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-            <view class="weui-media-box__title">精神病2</view>
-            <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
-          </view>
-        </navigator>
-      </view>
-
-      <view class="weui-panel__bd">
-        <navigator url="../illtest-page/jingshenbing/testill" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-            <image class="weui-media-box__thumb" src="/images/image_selected.png" />
-          </view>
-          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-            <view class="weui-media-box__title">精神病3</view>
-            <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。 </view>
-          </view>
-        </navigator>
-      </view>
     </view>
   </view>
 </view>

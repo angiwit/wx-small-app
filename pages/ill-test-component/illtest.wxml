@@ -4,26 +4,26 @@
   </view>
 
   <view class="page__bd">
-    <view class="weui-cells__title" wx:if="{{questionNum+1}} < {{itemDetail}}.length ">{{itemDetail[questionNum].topic_name}}</view>
-    <view class="weui-cells weui-cells_after-title">
-      <radio-group bindchange="radioChange">
-        <label class="weui-cell weui-check__label" wx:for="{{itemDetail[questionNum].topic_answer}}" wx:key="{{item.topic_answer_id}}">
-          <radio class="weui-check" value="{{item.topic_answer_id}}" checked="{{item.checked}}" />
-         
-          <view class="weui-cell__bd">{{item.answer_name}}</view>
-          <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
-            <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
-          </view>
-        </label>
-      </radio-group>
+    <view class='body_container'>
+      <view class='component_container'>
+        <view class="weui-cells__title" wx:if="{{questionNum+1}} < {{itemDetail}}.length ">{{itemDetail[questionNum].topic_name}}</view>
+        <view class="weui-cells weui-cells_after-title">
+          <radio-group bindchange="radioChange">
+            <label class="weui-cell weui-check__label" wx:for="{{itemDetail[questionNum].topic_answer}}" wx:key="{{item.topic_answer_id}}">
+              <radio class="weui-check" value="{{item.topic_answer_id}}" checked="{{item.checked}}" />
+
+              <view class="weui-cell__bd">{{item.answer_name}}</view>
+              <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+              </view>
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="my_weui-btn_container">
+          <button class="my_weui-btn" type="primary" bindtap="addQuestionNum" wx:if="{{questionNum+1 < itemDetail.length}}">下一题</button>
+          <button class="my_weui-btn" type="primary" bindtap="submitAnswer" wx:else>提交</button>
+      </view>
     </view>
-    <view class="weui-btn-area">
-      <button class="weui-btn" type="primary" bindtap="addQuestionNum" 
-      wx:if="{{questionNum+1 < itemDetail.length}}">下一题</button>
-      <button class="weui-btn" type="primary" bindtap="submitAnswer" wx:else>提交</button>
-    </view>
-    
-      
-    
   </view>
 </view>

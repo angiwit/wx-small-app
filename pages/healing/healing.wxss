@@ -1,71 +1,64 @@
 @import '/dist/style/weui.wxss';
-.weui-number-input {
-    float:left;
-    height:20px;
-    font-size:20px;
-    color: #666;
-    -webkit-appearance: none;
-    appearance: none;
-    border:1px solid #ececec;
-    padding:3px 0;
-    text-align:center;
-    border-radius: 1px;
-  }
-  .weui-number {
-    float:left;
-    height:20px;
-    font-size:25px;
-    line-height:18px;
-    color:#3cc51f;
-    border:1px solid #ececec;
-  }
-  .weui-number-sub {
-    border-right:none;
-    padding:3px 10px;
-    border-radius:2px 0 0 2px;
-  }
-  .weui-number-plus {
-    border-left:none;
-    margin-right: 5px;
-    padding:3px 8px;
-    border-radius:0 2px 2px 0;
-  }
 
-.weui-rater {
-  text-align: left;
-  display: inline-block;
-  line-height: normal;
+.page {
 }
-.weui-rater a {
-  display: inline-block;
+
+.page__hd {
+}
+
+.page__bd {
+  display: flex;
+  background-color: #f6f6f6;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.body_container {
+  background-color: white;
+  display: flex;
+  justify-content: center; /*如果在主轴方向设置了这个属性，则主轴方向的margin、padding等不起作用*/
+  flex-flow: column wrap;
+  align-items: center; /*样式的高度方向不用关心，由margin、padding、内容等撑开就可以了*/
+  width: 90%; /*父元素设置了flex，如果这里不设置width，则元素的宽由元素内容撑开 */
+  height: 80vh;
+}
+
+.component_font {
+  font-size: 14px;
+  color: #999;
   text-align: center;
-  line-height: 25px;
-  cursor: pointer;
-  color: #ccc;
 }
-.weui-rater a:last-child {
-  padding-right: 2px!important;
-  margin-right: 0px!important;
+
+.item_content_main {
+  flex: 4;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #999;
+  width: 80%;
+  text-align: left;
+  word-break: break-all;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.weui-rater a:hover {
-  color: #ffdd99;
+
+.component_container {
+  flex: 4;
 }
-.weui-rater a.checked {
-  color: #ffdd99 !important;
-  cursor: not-allowed;
+
+.my_weui-btn_container {
+  flex: 1;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.weui-rater-box {
-  position: relative;
-  margin-right: 2px; font-size: 25px; width: 25px; height: 25px; color: rgb(255, 204, 102);
-}
-.weui-rater-inner {
- position: relative;
- display: inline-block;
-}
-.weui-rater-outer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  overflow: hidden;
+
+.my_weui-btn {
+  color: #fff;
+  background-color: #1aad19;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
