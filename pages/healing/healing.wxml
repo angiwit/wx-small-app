@@ -4,7 +4,7 @@
   <view class="page__bd">
     <view class='body_container'>
       <view class='component_container'>
-        <view class="weui-cells__title">表单</view>
+        <view class="weui-cells__title">诊疗缴费</view>
         <view class="weui-cells weui-cells_after-title">
           <view class="weui-cell weui-cell_input">
             <view class="weui-cell__hd">
@@ -12,6 +12,9 @@
             </view>
             <view class="weui-cell__bd">
               <input class="weui-input component_font" placeholder="请输入整数" />
+            </view>
+            <view class="weui-cell__hd">
+              <view class="">元</view>
             </view>
           </view>
 

@@ -13,6 +13,9 @@
           </view>
         </view>
       </view>
+      <view class='item_content_main'>
+        温馨提示：支付成功后返回后进入到打卡页面查看打卡情况
+      </view>
     </view>
   </view>
 

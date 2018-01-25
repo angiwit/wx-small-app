@@ -9,7 +9,8 @@
     "pages/illtest-page/tuoyanzheng/testill",
     "pages/illtest-page/jingshenbing/testill",
     "pages/healing/healing",
-    "pages/pay_succ/pay_succ"
+    "pages/pay_succ/pay_succ",
+    "pages/sign/sign"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +31,7 @@
         "selectedIconPath": "images/hospital_selected.png"
       },
       {
-        "pagePath": "pages/image/img",
+        "pagePath": "pages/sign/sign",
         "text": "今日打卡",
         "iconPath": "images/daka_selected.png",
         "selectedIconPath": "images/daka_selected.png"

@@ -35,13 +35,11 @@
   padding-bottom: 10px;
   font-size: 14px;
   color: #999;
-  width: 80%;
+  width: 90%;
   text-align: left;
   word-break: break-all;
   overflow-y: scroll;
   margin-bottom: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .component_container {

@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="page__hd">
+
+  </view>
+  <view class="page__bd">
+    <view class='body_container'>
+      <view class='sigle_component_container'>
+        <view class="tip_words">今日打卡</view>
+      </view>
+      <view class='sign_component_container'>
+        <view class='sign_icon' bindtap='signToday' wx:if="{{isSignToday == false}}">打卡</view>
+        <view class='sign_icon' bindtap='signToday' wx:else>已打卡</view>
+      </view>
+
+
+      <view class='sigle_component_container'>
+        <view class="tip_words">影像上传</view>
+      </view>
+      <view class='image_component_container'>
+        <image class='iamge_uploaded' src='/images/zonghe_result.png'></image>
+        <image class='uploader' src='/images/upload_icon.png'></image>
+      </view>
+
+      <!-- <view class='item_content_main'>
+        <view class="weui-cells__title">输入个人心得</view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea placehodler_font" placeholder="请输入文本" style="height: 3.3em" />
+            <view class="weui-textarea-counter">0/200</view>
+          </view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>
