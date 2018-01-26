@@ -31,6 +31,6 @@ App( {
     }
   },
   globalData: {
-    userInfo: 12121
+    userInfo: ""
   }
 })

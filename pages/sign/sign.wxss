@@ -9,13 +9,15 @@
   width: 90%; /*如果这里不设置width，则元素的宽由元素内容撑开 */
   height: 80vh;
   overflow-y: scroll;
+  justify-content: space-between;
 }
-.tip_words{
-  width:90%;
-color:#999;
-font-size:14px;
-border-bottom:1px solid #f6f6f6;
-line-height: 2.3;
+
+.tip_words {
+  width: 90%;
+  color: #999;
+  font-size: 14px;
+  border-bottom: 1px solid #f6f6f6;
+  line-height: 2.3;
 }
 
 .page__bd {
@@ -32,11 +34,11 @@ line-height: 2.3;
   align-items: center;
   margin-top: 5px;
   flex: 0.3;
-
   width: 90%;
   margin-left: 5%;
 }
-.sign_component_container{
+
+.sign_component_container {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -54,7 +56,8 @@ line-height: 2.3;
   width: 90%;
   margin-left: 5%;
 }
-.iamge_uploaded_container{
+
+.iamge_uploaded_container {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
@@ -63,27 +66,29 @@ line-height: 2.3;
   overflow-y: scroll;
   /* border: 1px solid #f6f6f6; */
 }
-.iamge_uploaded{
+
+.iamge_uploaded {
   width: 70px;
   height: 70px;
   margin: 5px;
   border: 1px solid #f6f6f6;
 }
-.uploader{
+
+.uploader {
   width: 70px;
   height: 70px;
   margin: 5px;
 }
 
 .sign_icon {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   background-color: #09bb07;
-  font-size: 30px;
+  font-size: 18px;
   color: white;
   text-align: center;
-  line-height: 3;
+  line-height: 4.5;
 }
 
 .uploader_icon {
@@ -106,6 +111,21 @@ line-height: 2.3;
   color: #999;
 }
 
-.border_cover{
+.border_cover {
   border-bottom: none;
+}
+
+.my_weui-btn_container {
+  flex: 0.3;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.my_weui-btn {
+  color: #fff;
+  background-color: #1aad19;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }

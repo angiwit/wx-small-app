@@ -10,7 +10,8 @@
     "pages/illtest-page/jingshenbing/testill",
     "pages/healing/healing",
     "pages/pay_succ/pay_succ",
-    "pages/sign/sign"
+    "pages/sign/sign",
+    "pages/usercenter/usercenter"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,7 +38,7 @@
         "selectedIconPath": "images/daka_selected.png"
       },
       {
-        "pagePath": "pages/image/img",
+        "pagePath": "pages/usercenter/usercenter",
         "text": "个人中心",
         "iconPath": "images/my_unselected.png",
         "selectedIconPath": "images/my_selected.png"

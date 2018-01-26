@@ -30,6 +30,9 @@
           </view>
         </view>
       </view> -->
+       <view class="my_weui-btn_container">
+        <button class="my_weui-btn" bindtap='payResult'>确定</button>
+      </view>
     </view>
   </view>
 </view>
